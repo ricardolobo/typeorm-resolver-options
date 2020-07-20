@@ -2,5 +2,8 @@
     "name": "typeorm-resolver-options",
     "version": "0.0.0",
     "main": "index.js",
-    "license": "MIT"
+    "license": "MIT",
+    "peerDependencies": {
+	"typeorm": ">=0.2.0"
+    },
 }
