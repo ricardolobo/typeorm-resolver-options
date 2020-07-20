@@ -1,8 +1,22 @@
 {
     "name": "typeorm-resolver-options",
-    "version": "0.0.1",
+    "description": "Util to create typeorm options object from resolver args.",
+    "version": "0.0.2",
     "main": "index.js",
     "license": "MIT",
+    "author": "Ricardo Lobo <ricardolobo@solo.com.pt>",
+    "keywords": [
+	"GraphQL",
+	"TypeORM"
+    ],
+    "homepage": "https://github.com/ricardolobo/typeorm-resolver-options",
+    "bugs": {
+	"url": "https://github.com/ricardolobo/typeorm-resolver-options/issues"
+    },
+    "repository": {
+	"type": "git",
+	"url": "https://github.com/ricardolobo/typeorm-resolver-options.git"
+    },
     "peerDependencies": {
 	"typeorm": ">=0.2.0"
     }
