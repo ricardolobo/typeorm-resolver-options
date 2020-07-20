@@ -39,7 +39,7 @@ function buildOptions(args) {
     let order = { id: 'ASC' }
 
     if (args[orderArg]) {
-        order = { [args.order.field]: args.order.direction }
+        order = { [args[orderArg].field]: args[orderArg].direction }
     }
 
     let options = {
