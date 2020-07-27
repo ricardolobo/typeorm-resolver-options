@@ -1,7 +1,7 @@
 const typeorm = require('typeorm')
 
 /** reads configs from environment variables, if not set, use defaults*/
-function getConfigs() {
+const getConfigs = () => {
     return {
         pageSize: process.env.TRO_DEFAULT_PAGE_SIZE || 25,
         searchField: process.env.TRO_DEFAULT_SEARCH_FIELD || 'name',
@@ -13,7 +13,7 @@ function getConfigs() {
 }
 
 /** creates typeorm options object from graphql resolver args and info*/
-function buildOptions(args: any) {
+const buildOptions = (args: any) => {
 
     const configs = getConfigs()
 
@@ -46,4 +46,4 @@ function buildOptions(args: any) {
     return options
 }
 
-module.exports.buildOptions = buildOptions;
+export default buildOptions;

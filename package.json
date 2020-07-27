@@ -1,7 +1,7 @@
 {
     "name": "typeorm-resolver-options",
     "description": "Util to create typeorm options object from resolver args.",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "license": "MIT",
@@ -30,5 +30,6 @@
 	"build": "yarn clean && yarn tsc",
 	"clean": "rm -rf dist",
 	"start": "yarn tsc -w"
-    }
+    },
+    "type": "module"
 }
