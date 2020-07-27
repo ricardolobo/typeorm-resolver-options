@@ -1,8 +1,9 @@
 {
     "name": "typeorm-resolver-options",
     "description": "Util to create typeorm options object from resolver args.",
-    "version": "0.0.3",
-    "main": "index.js",
+    "version": "0.0.4",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
     "license": "MIT",
     "author": "Ricardo Lobo <ricardolobo@solo.com.pt>",
     "keywords": [
@@ -19,5 +20,15 @@
     },
     "peerDependencies": {
 	"typeorm": ">=0.2.0"
+    },
+    "devDependencies": {
+	"@types/node": "^14.0.26",
+	"typescript": "^3.9.7",
+	"typeorm": "^0.2.25"
+    },
+    "scripts": {
+	"build": "yarn clean && yarn tsc",
+	"clean": "rm -rf dist",
+	"start": "yarn tsc -w"
     }
 }
